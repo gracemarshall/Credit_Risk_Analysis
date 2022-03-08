@@ -2,25 +2,36 @@
 ![Credit_Risk_Analysis](https://github.com/gracemarshall/Credit_Risk_Analysis/blob/main/images%20folder/Credit_Risk_Analysis.png)
 
 ## Project Overview
-The Credit_Risk_Analysis uses the imbalanced-learn and scikit-learn libraries to evaluate three machine learning models by using resampling to determine which is better at predicting credit risk. The following algorithms are used, oversampling RandomOverSampler, SMOTE algorithms, and the under-sampling ClusterCentroids algorithm. The data set will be resampled Using these algorithms, view the count of the target classes, train a logistic regression classifier, calculate the balanced accuracy score, generate a confusion matrix, and generate a classification report. Deliverable for this project are as follows;
-* Use Re-sampling Models to Predict Credit Risk
-* Use the SMOTEENN Algorithm to Predict Credit Risk
-* Use Ensemble Classifiers to Predict Credit Risk
-* A Written Report on the Analysis (README.md)
+The Credit_Risk_Analysis uses the imbalanced-learn and scikit-learn libraries to evaluate three machine learning models by using resampling to determine which is better at predicting credit risk. The following algorithms are used, oversampling RandomOverSampler, SMOTE algorithms, and the under-sampling ClusterCentroids algorithm. The data set will be resampled Using these algorithms, view the count of the target classes, train a logistic regression classifier, calculate the balanced accuracy score, generate a confusion matrix, and generate a classification report. Deliverable for this project are as follows; Use Re-sampling Models to Predict Credit Risk, Use the SMOTEENN Algorithm to Predict Credit Risk, Use Ensemble Classifiers to Predict Credit Risk, and a Written Report on the Analysis (README.md).
 
 ##  Results
 ## Use Re-sampling Models to Predict Credit Risk
 ### All three algorithms
-![score1.png](https://github.com/gracemarshall/Credit_Risk_Analysis/blob/main/images%20folder/Accuracy_Score1.png)
+![Smote0.png](https://github.com/gracemarshall/Credit_Risk_Analysis/blob/main/images2/Smote0.png)
 
-![score2.png](https://github.com/gracemarshall/Credit_Risk_Analysis/blob/main/images%20folder/Accuracy_Score2.png)
+![NRO1.png](https://github.com/gracemarshall/Credit_Risk_Analysis/blob/main/images2/NRO1.png)
 
-![score3.png](https://github.com/gracemarshall/Credit_Risk_Analysis/blob/main/images%20folder/Accuracy_Score3.png)
+![UnderS3.png](https://github.com/gracemarshall/Credit_Risk_Analysis/blob/main/images2/UnderS3.png)
 
-## Use the SMOTEENN Algorithm to Predict Credit Risk
+![Combination4.png](https://github.com/gracemarshall/Credit_Risk_Analysis/blob/main/images2/Combination4.png)
 
-![confusion_matrix.png](https://github.com/gracemarshall/Credit_Risk_Analysis/blob/main/images%20folder/confusion_matrix.png)
+![classification1.png](https://github.com/gracemarshall/Credit_Risk_Analysis/blob/main/images2/BRFC5.png)
 
-## Use Ensemble Classifiers to Predict Credit Risk
+![classification2.png](https://github.com/gracemarshall/Credit_Risk_Analysis/blob/main/images2/Easy%20EAC6.png)
 
-![classification1.png](https://github.com/gracemarshall/Credit_Risk_Analysis/blob/main/images%20folder/Class_Report1.png)
+##  Summary
+## Summary
+Six models were used in performing this analysis and yielded the following results. 
+
+models	                    accuracy	precision	recall	F1 Score
+EasyEnsembleClassifer	        79%	        3%	        70%	    6%
+BalancedRandomForestClassifer	79%	        3%	        70%	    6%
+SMOTE	                        64%         1%	        69%	    2%
+SMOTEENN:	                    64%	        1%	        69%	    2%
+RandomOverSampler	            64%	        1%	        69%	    2%
+ClusterCentroids	            64%	        1%	        69%	    2%
+
+EasyEnsembleClassifer and the BalancedRandomForestClassifer models yielded the best results with an accuracy rate of 79% and a 3% precision rate in high-risk prediction. The recall for both models were 70% which is 1% higher than the other models. 
+
+
+
